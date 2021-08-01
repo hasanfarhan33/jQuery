@@ -6,11 +6,9 @@
 // }
 
 // $("#circle").click(function () {
-//   //   $("p").html("This text has changed");
-//   //   alert("Hello");
-//   //   $("#circle").css("width", "300px");
-//   //   $("#circle").css("background-color", "red");
-// //   $("#circle").css("display", "none");
+//   $(this).animate({ width: "400px", height: "400px" }, 2000, function () {
+//     $(this).css("background-color", "red");
+//   });
 // });
 
 // $("#circle").hover(function () {
@@ -42,6 +40,12 @@
 //   $("#fadeInText").fadeIn("slow");
 // });
 
-$("#toggleButton").click(function () {
-  $("#toggleText").toggle();
-});
+// $("#toggleButton").click(function () {
+//   $("#toggleText").toggle();
+// });
+
+// var regex = /Great/i;
+var regex = /e/g; //returns all the Es.
+var string = "Regex is great!";
+var result = string.match(regex);
+alert(result);
